@@ -27,7 +27,7 @@ runs:
       with:
         ref: ${{steps.before-deploy-from-PR.outputs.ref}}
 
-    - uses: abiglobalhealth/github-action-deploy@v0.0.0
+    - uses: abiglobalhealth/github-action-deploy-any@v0.0.0
       with:
         environment: ${{inputs.environment}}
         AWS_ACCESS_KEY_ID_DEV: ${{inputs.AWS_ACCESS_KEY_ID_DEV}}
